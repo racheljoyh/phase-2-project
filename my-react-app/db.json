@@ -1,0 +1,226 @@
+{
+  "photos": [
+    {
+      "id": 0,
+      "caption": "Cydnee",
+      "category": "Portraits",
+      "image": "src/assets/images/Portraits/Cydnee.jpg",
+      "lqpi": "src/assets/images/LQPI/Cyndee.jpg",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 1,
+      "caption": "Christian",
+      "category": "Portraits",
+      "image": "src/assets/images/Portraits/Christian.jpg",
+      "lqpi": "src/assets/images/LQPI/Christian.jpg",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 2,
+      "caption": "Jenny Watwood",
+      "category": "Portraits",
+      "image": "src/assets/images/Portraits/Jenny Watwood.jpg",
+      "lqpi": "src/assets/images/LQPI/Jenny Watwood.jpg",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 3,
+      "caption": "Willis Portier",
+      "category": "Portraits",
+      "image": "src/assets/images/Portraits/Willis Portier.jpg",
+      "lqpi": "src/assets/images/LQPI/Willis Portier.jpg",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 4,
+      "caption": "Organic Dreams",
+      "category": "Portraits",
+      "image": "src/assets/images/Portraits/Organic Dreams.jpg",
+      "lqpi": "src/assets/images/LQPI/Organic Dreams.jpg",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 5,
+      "caption": "Rouge",
+      "category": "Portraits",
+      "image": "src/assets/images/Portraits/Rouge.jpg",
+      "lqpi": "src/assets/images/LQPI/Rouge.jpg",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 6,
+      "caption": "China Town",
+      "category": "Street",
+      "image": "src/assets/images/Street/ChinaTown.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 7,
+      "caption": "Spring",
+      "category": "Portraits",
+      "image": "src/assets/images/Portraits/Spring.jpg",
+      "lqpi": "src/assets/images/LQPI/Spring.jpg",
+      "comments": [],
+      "likes": false
+    },
+    {
+      "id": 8,
+      "caption": "Jenny",
+      "category": "Portraits",
+      "image": "src/assets/images/Portraits/Jenny2.jpg",
+      "lqpi": "src/assets/images/LQPI/Jenny2.jpg",
+      "comments": [],
+      "likes": false
+    },
+    {
+      "id": 9,
+      "caption": "New York Nights",
+      "category": "Street",
+      "image": "src/assets/images/Street/ChinaTown2.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 10,
+      "caption": "Afternoon ride",
+      "category": "Street",
+      "image": "src/assets/images/Street/Bike.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 11,
+      "caption": "Chicago",
+      "category": "Street",
+      "image": "src/assets/images/Street/Chicago.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 12,
+      "caption": "Red Rooms",
+      "category": "Street",
+      "image": "src/assets/images/Street/ChinaTown3.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 13,
+      "caption": "Fishing by the dock",
+      "category": "Street",
+      "image": "src/assets/images/Street/Fishing by the dock.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 14,
+      "caption": "Moving",
+      "category": "Street",
+      "image": "src/assets/images/Street/Hauling.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 15,
+      "caption": "Afternoon in the city",
+      "category": "Street",
+      "image": "src/assets/images/Street/Image 1 (3).jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 16,
+      "caption": "Who are you?",
+      "category": "Street",
+      "image": "src/assets/images/Street/Image 8 (6).jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 17,
+      "caption": "Late afternoon in Miller",
+      "category": "Street",
+      "image": "src/assets/images/Street/Late Afternoon in Miller.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 18,
+      "caption": "Palms",
+      "category": "Street",
+      "image": "src/assets/images/Street/Palms.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": 0
+    },
+    {
+      "id": 19,
+      "caption": "Peace",
+      "category": "Street",
+      "image": "src/assets/images/Street/Peace.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": 0
+    },
+    {
+      "id": 20,
+      "caption": "Santa Monica Pier",
+      "category": "Street",
+      "image": "src/assets/images/Street/Santa Monica Pier.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 21,
+      "caption": "Snacks at the Pier",
+      "category": "Street",
+      "image": "src/assets/images/Street/Snacks at Pier.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 22,
+      "caption": "Touring",
+      "category": "Street",
+      "image": "src/assets/images/Street/Touring.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "id": 23,
+      "caption": "Venice Beach",
+      "category": "Street",
+      "image": "src/assets/images/Street/Venice Beach.jpg",
+      "lqpi": "",
+      "comments": [],
+      "liked": false
+    },
+    {
+      "caption": "test",
+      "image": "https://images.unsplash.com/photo-1670348282580-abc55452fe6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "category": "",
+      "id": 24
+    }
+  ]
+}

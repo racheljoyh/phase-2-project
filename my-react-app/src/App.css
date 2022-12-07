@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #10b981;
+  padding: 4rem;
+}
+
+.title {
+  color: #333;
+  font-weight: 500;
+  font-size: 4.8rem;
+  font-family: "Pacifico", sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #f8f9fa;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.image {
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+/* .LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+} */
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  /* padding-left: 5rem; */
+  padding-bottom: 10rem;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 2.6rem;
+  width: 60rem;
+}
+
+.photo-card:hover img {
+  filter: brightness(45%);
+}
+
+.photo-card:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.filter {
+  padding: 1rem;
+}
+
+.filter-label {
+  padding-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.main {
+  background-color: #ecfdf5;
+  font-size: 1.6rem;
+}
+
+.caption {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.like-icon-unfilled {
+  width: 3.2rem;
+  height: 3.2rem;
+  stroke: #fff;
+}
+
+.like-icon-filled {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #d9202a;
+}
+
+/* My Likes */
+
+.my-likes-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.my-likes-title {
+  font-size: 3.6rem;
+  margin-bottom: 3.2rem;
+  padding: 9rem;
+}
+
+.likes-container {
+  display: grid;
+  grid-template-rows: auto;
+  column-gap: 2.4rem;
+  padding-bottom: 5rem;
+}
+
+/* Create Post */
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.form input,
+select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #d1fae5;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.post-container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.create-post {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 4.8rem 0 12.8rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #10b981;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.post-heading {
+  font-size: 3.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.select-photo-container {
+  width: 10%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #d1fae5;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
