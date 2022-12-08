@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import App from "/src/App.css";
 import LazyLoad from "react-lazy-load";
+import Popup from "./Popup";
 
 function PhotoCard({ photo, onAddToLikes, onHandleRemoveLike }) {
   const { id, caption, image, liked, lqpi } = photo;
   const [isLiked, setIsLiked] = useState(liked);
   const [isLoading, setIsLoading] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   function onLoad() {
     // delay for demo only
     setTimeout(() => setIsLoading(false), 1000);
   }
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
 
   function handleLikeChange() {
     setIsLiked((isLiked) => !isLiked);
@@ -27,20 +33,29 @@ function PhotoCard({ photo, onAddToLikes, onHandleRemoveLike }) {
 
   return (
     <div className="photo-card">
-      <LazyLoad height={100} threshold={0.5}>
-        <img
-          width={300}
-          src={lqpi}
-          style={{ display: isLoading ? "block" : "none" }}
-          className="image"
-          alt={caption}
-        />
-      </LazyLoad>
-      <LazyLoad height={700} threshold={0.5}>
+      <div className="pop-up">
+        {isOpen && (
+          <Popup
+            content={<img className="popup-image" src={image} />}
+            handleClose={togglePopup}
+          />
+        )}
+      </div>
+      {/* <LazyLoad height={500} threshold={0.5}> */}
+      <img
+        className="image"
+        // width={500}
+        src={lqpi}
+        style={{ display: isLoading ? "block" : "none" }}
+        alt={caption}
+      />
+      {/* </LazyLoad> */}
+
+      <LazyLoad>
         <img
           src={image}
           className="image"
-          width={650}
+          // width={500}
           alt={caption}
           style={{ display: isLoading ? "none" : "block" }}
           onLoad={onLoad}
@@ -78,6 +93,7 @@ function PhotoCard({ photo, onAddToLikes, onHandleRemoveLike }) {
             </svg>
           </div>
         )}
+        <button onClick={togglePopup}>Click to make big</button>
       </div>
     </div>
   );
