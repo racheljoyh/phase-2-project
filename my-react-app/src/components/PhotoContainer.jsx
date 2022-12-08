@@ -2,9 +2,20 @@ import React from "react";
 import PhotoCard from "./PhotoCard";
 import App from "/src/App.css";
 
-function PhotoContainer({ photos, onAddToLikes, filterBy, onChangeFilter }) {
+function PhotoContainer({
+  photos,
+  onAddToLikes,
+  filterBy,
+  onChangeFilter,
+  onHandleRemoveLike,
+}) {
   const photosList = photos.map((photo) => (
-    <PhotoCard key={photo.id} photo={photo} onLikeClick={onAddToLikes} />
+    <PhotoCard
+      key={photo.id}
+      photo={photo}
+      onAddToLikes={onAddToLikes}
+      onHandleRemoveLike={onHandleRemoveLike}
+    />
   ));
 
   function handleFilterChange(e) {

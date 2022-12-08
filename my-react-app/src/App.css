@@ -42,7 +42,7 @@ header {
 
 .nav-link:hover,
 .nav-link:active {
-  color: #f8f9fa;
+  color: #d1fae5;
 }
 
 body {
@@ -69,7 +69,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+
   /* padding-left: 5rem; */
   padding-bottom: 10rem;
 }
@@ -131,20 +131,27 @@ body {
   width: 3.2rem;
   height: 3.2rem;
   stroke: #fff;
+  cursor: pointer;
 }
 
 .like-icon-filled {
   width: 3.2rem;
   height: 3.2rem;
   color: #d9202a;
+  cursor: pointer;
 }
 
 /* My Likes */
 
 .my-likes-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 4rem;
+  align-items: center;
+  margin-top: 10rem;
+  /* padding-left: 5rem; */
+  padding-bottom: 10rem;
+  font-size: 1.8rem;
 }
 
 .my-likes-title {
@@ -153,12 +160,12 @@ body {
   padding: 9rem;
 }
 
-.likes-container {
+/* .likes-container {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: ;
   column-gap: 2.4rem;
   padding-bottom: 5rem;
-}
+} */
 
 /* Create Post */
 .form {

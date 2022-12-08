@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
+import MyLikes from "./MyLikes";
 import PhotoContainer from "./PhotoContainer";
 import Nav from "./Nav";
 import CreatePost from "./CreatePost";
-import MyLikes from "./MyLikes";
+
 import { Switch, Route } from "react-router-dom";
 
 function App() {
   const [photos, setPhotos] = useState([]);
-  const [myLikes, setMyLikes] = useState([]);
   const [category, setCategory] = useState("All");
 
   useEffect(() => {
@@ -32,8 +32,8 @@ function App() {
   }
 
   function handleRemoveLike(unLikedPhoto) {
-    const unLiked = myLikes.filter((photo) => photo.id !== unLikedPhoto.id);
-    setMyLikes(unLiked);
+    const unLiked = photos.filter((photo) => photo.id !== unLikedPhoto.id);
+    setPhotos(unLiked);
   }
 
   const postFilter = [...photos].filter((photo) => {
@@ -51,13 +51,18 @@ function App() {
             onChangeFilter={setCategory}
             photos={postFilter}
             onAddToLikes={handleLikeToAdd}
+            onHandleRemoveLike={handleRemoveLike}
           />
         </Route>
-        <Route path="/photos/my-likes">
-          <MyLikes photos={photos} onHandleRemoveLike={handleRemoveLike} />
+        <Route path="/my-likes">
+          <MyLikes
+            photos={photos}
+            onHandleRemoveLike={handleRemoveLike}
+            onAddToLikes={handleLikeToAdd}
+          />
         </Route>
         <Route>
-          <CreatePost path="/photos/add" onAddPost={handleAddPost} />
+          <CreatePost path="/add" onAddPost={handleAddPost} />
         </Route>
       </Switch>
     </div>

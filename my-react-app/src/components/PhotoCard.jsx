@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import App from "/src/App.css";
 import LazyLoad from "react-lazy-load";
 
-function PhotoCard({ photo, onLikeClick }) {
+function PhotoCard({ photo, onAddToLikes, onHandleRemoveLike }) {
   const { id, caption, image, liked, lqpi } = photo;
   const [isLiked, setIsLiked] = useState(liked);
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +22,7 @@ function PhotoCard({ photo, onLikeClick }) {
       body: JSON.stringify({ liked: !liked }),
     })
       .then((r) => r.json())
-      .then((updatedLike) => onLikeClick(updatedLike));
+      .then((updatedLike) => onAddToLikes(updatedLike));
   }
 
   return (

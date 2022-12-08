@@ -2,11 +2,16 @@ import React from "react";
 import PhotoCard from "./PhotoCard";
 import App from "/src/App.css";
 
-function MyLikes({ photos, onHandleRemoveLike }) {
+function MyLikes({ photos, onHandleRemoveLike, onAddToLikes }) {
   const likedPhotos = photos.filter((photo) => photo.liked);
 
   const allPosts = likedPhotos.map((photo) => (
-    <PhotoCard key={photo.id} photo={photo} onLikeClick={onHandleRemoveLike} />
+    <PhotoCard
+      key={photo.id}
+      photo={photo}
+      onHandleRemoveLike={onHandleRemoveLike}
+      onAddToLikes={onAddToLikes}
+    />
   ));
   return (
     <div className="likes-container">
